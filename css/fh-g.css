@@ -91,7 +91,7 @@ body {
 	/*background-color:rgba(255,253,202,1);
 		background-image: url(bb.jpg);*/
 	/*position: relative;*/
-	background-image: url(images/footer-fade-rotate.png);
+	background-image: url(../images/footer-fade-rotate.png);
 	position: bottom center;
 	background-size: cover;
 	background-repeat: no-repeat;
