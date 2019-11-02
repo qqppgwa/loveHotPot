@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="slick/slick.css">
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+<script src="jquery-3.2.1.min.js"></script>
+<style type="text/css">
+*{outline: 1px solid red;}
+	.box{
+		width: 90%;
+		margin: auto;
+	}
+	.box img{
+		width: 100%;
+	}
+
+	.box div{
+		margin: 0 10px;
+	}
+/*
+	button{
+		width: 100px;
+		height: 100px;
+		background-color: #CCC;
+
+		left: 100px;
+	}*/
+</style>
+</head>
+<body>
+
+<div class="box">
+	<div><img src="https://api.fnkr.net/testimg/350x200/00C0D1/0FF/?text=1"></div>
+	<div><img src="https://api.fnkr.net/testimg/350x200/d0CED1/F0F/?text=2"></div>
+	<div><img src="https://api.fnkr.net/testimg/350x200/00CEDa/FF0/?text=3"></div>
+	<div><img src="https://api.fnkr.net/testimg/350x200/00CE11/F00/?text=4"></div>
+	<div><img src="https://api.fnkr.net/testimg/350x200/00CfD1/FFF/?text=5"></div>
+</div>
+<!-- <button type="button" class="slick-prev">Previous</button> -->
+
+
+   
+
+
+   <script type="text/javascript" src="slick/slick.min.js"></script> 
+
+<script>$(document).ready(function(){
+	$('.box').slick({
+  // centerMode: true,
+  // centerPadding: '60px',
+  // slidesToShow: 1,
+  // responsive: [
+  //   {
+  //     breakpoint: 768,
+  //     settings: {
+  //       arrows: true,
+  //       centerMode: true,
+  //       centerPadding: '40px',
+  //       slidesToShow: 1
+  //     }
+  //   },
+  //   {
+  //     breakpoint: 480,
+  //     settings: {
+  //       arrows: true,
+  //       centerMode: true,
+  //       centerPadding: '40px',
+  //       slidesToShow: 1
+  //     }
+  //   }
+  // ]
+    dots: false,
+	  infinite: true,
+	  autoplay: true,
+	  autoplaySpeed: 5000,
+	  pauseOnHover: true,
+	  cssEase: 'linear',
+	  centerMode: true,
+	  centerPadding: '0%',
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  responsive: [
+	        {
+	          breakpoint: 992,
+	          settings: {
+	            centerMode: true,
+	            centerPadding: '0px',
+	            slidesToShow: 1,
+	            slidesToScroll: 1,
+	            infinite: true,
+	          }
+	        }
+	      ]
+});
+	});
+
+
+</script>
+</body>
+</html>
