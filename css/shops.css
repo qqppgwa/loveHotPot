@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -26,38 +94,59 @@ time, mark, audio, video {
 	text-decoration: none;
 	color: #000;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 
 }
-*{/*outline: 1px solid red;*/
-	margin:0;
+
+* {
+	/*outline: 1px solid red;*/
+	margin: 0;
 	padding: 0;
-	}
-	
+}
+
 /*=----------------主圖sec1*/
 
-.sec1{
+.sec1 {
 	background-color: #C8AB7E;
 	width: 100%;
 	height: 380px;
@@ -66,12 +155,13 @@ table {
 
 
 }
-.sec1 .main-pic{
+
+.sec1 .main-pic {
 	width: 85%;
 	max-width: 1300px;
 	height: 100%;
 	overflow: hidden;
-	background-image: url(loveshop.jpg);
+	background-image: url(../images/loveshop.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -84,11 +174,12 @@ table {
 	margin: auto;
 
 }
-.sec1 .main-pic .main-title{
+
+.sec1 .main-pic .main-title {
 	width: 250px;
 	height: 110px;
 	padding: 25px;
-	background-color: rgba(255,255,255,.5);
+	background-color: rgba(255, 255, 255, .5);
 	position: absolute;
 	top: 0px;
 	bottom: 0;
@@ -98,43 +189,50 @@ table {
 	text-align: center;
 	animation-name: zoom;
 	animation-duration: .9s;
-	animation-fill-mode: both; 
+	animation-fill-mode: both;
 	/*line-height: 3em;*/
-	
+
 }
 
-.sec1 .main-title h1{
+.sec1 .main-title h1 {
 	font-size: 35px;
 	font-weight: bold;
 	color: #533;
 	line-height: 2em;
-	text-shadow: 2px 1px 2px rgba(0,0,0,.3);
+	text-shadow: 2px 1px 2px rgba(0, 0, 0, .3);
 }
 
-.sec1 .main-title h2{
+.sec1 .main-title h2 {
 	font-size: 20px;
 	line-height: 2em;
 }
-@keyframes zoom{
-	0%{opacity: 0;
-		transform: scale3d(.3,.3,.3);}
-	100%{opacity: 1;
+
+@keyframes zoom {
+	0% {
+		opacity: 0;
+		transform: scale3d(.3, .3, .3);
+	}
+
+	100% {
+		opacity: 1;
 
 	}
 }
 
 /*------------------分店標籤*/
-.sec2{
+.sec2 {
 	width: 100%;
 }
-.sec2 .shops-list{
+
+.sec2 .shops-list {
 	width: 80%;
 	margin: auto;
 	box-sizing: border-box;
 	padding-bottom: 30px;
 }
-.sec2 .tab{
-	
+
+.sec2 .tab {
+
 	overflow: hidden;
 	display: flex;
 	justify-content: space-around;
@@ -143,10 +241,10 @@ table {
 	margin: auto;
 }
 
-.sec2 .tab button{
+.sec2 .tab button {
 	padding: 30px 30px 15px 30px;
-	border:dashed #C8AB7E;
-/*	border-left: 2px dashed #C8AB7E;
+	border: dashed #C8AB7E;
+	/*	border-left: 2px dashed #C8AB7E;
 	border-right: 2px dashed #C8AB7E;
 	border-top: 2px dashed #C8AB7E;
 	border-bottom: : 2px dashed rgba(240,253,202,1);*/
@@ -163,87 +261,93 @@ table {
 
 }
 
-.sec2 .tab button:focus{
+.sec2 .tab button:focus {
 	outline: none;
 }
 
 .sec2 .tab button.active {
-    background-color: #C8AB7E;
-    color: rgba(240,253,202,1);
+	background-color: #C8AB7E;
+	color: rgba(240, 253, 202, 1);
 }
 
 .sec2 .tabcontent {
-    width: 100%;
-  	box-sizing: border-box;
-    display: none;
-   /* padding: 10px;*/
-    border-top: 4px dashed  #C8AB7E;
+	width: 100%;
+	box-sizing: border-box;
+	display: none;
+	/* padding: 10px;*/
+	border-top: 4px dashed #C8AB7E;
 
 
-    
-}   
 
-.sec2 .tabcontent:nth-child(2){
+}
+
+.sec2 .tabcontent:nth-child(2) {
 	display: block;
 
-} 
-.sec2 .shop-info{
-/*	width: 70vw;
+}
+
+.sec2 .shop-info {
+	/*	width: 70vw;
 	height: */
 
-	
+
 	background-color: #FFF0C9;
 	margin: auto;
 	/*overflow: hidden;*/
-	border:4px solid #C8AB7E;
+	border: 4px solid #C8AB7E;
 	margin-top: 60px;
-	
+
 }
-.sec2 .shop-info:first-child{
+
+.sec2 .shop-info:first-child {
 	margin-top: 30px;
 }
-.sec2 .shop-info .txt{
-	
+
+.sec2 .shop-info .txt {
+
 	box-sizing: border-box;
 	padding: 60px 10px 10px 10px;
 	width: 60%;
 	font-size: 20px;
 	line-height: 1.5em;
 	/*color: #533;*/
-	position: relative;	
+	position: relative;
 }
-.sec2 .txt p:nth-child(5){
+
+.sec2 .txt p:nth-child(5) {
 	text-align: right;
 	margin-right: 20px;
 	font-size: 19px;
 	cursor: pointer;
 	transition: .5s;
-	color: rgba(180,90,0,1);
+	color: rgba(180, 90, 0, 1);
 }
 
-.sec2 .txt p:nth-child(5):hover{
-	
+.sec2 .txt p:nth-child(5):hover {
+
 	font-weight: bold;
 
 }
 
-.sec2 .txt .tag{
+.sec2 .txt .tag {
 	padding: 10px;
 	padding-right: 60px;
-	background-color: rgba(130,0,0,.8);
+	background-color: rgba(130, 0, 0, .8);
 	position: absolute;
 	border-radius: 10px 0px 0 10px;
 	left: -7px;
 	top: -5px;
 
-	
+
 }
-.sec2 .tag h3{
-	color:rgba(240,253,202,1);
+
+.sec2 .tag h3 {
+	color: rgba(240, 253, 202, 1);
 	font-size: 22px;
 	font-weight: bold;
 }
-.sec2 .tag:after{
+
+.sec2 .tag:after {
 	display: block;
 	content: '';
 	width: 0;
@@ -255,31 +359,33 @@ table {
 	right: 0;
 	top: 0;
 }
-.sec2 .shop-info .pic{
+
+.sec2 .shop-info .pic {
 	width: 40%;
 	height: 20vw;
 	box-sizing: border-box;
-	
+
 	font-size: 0;
 	background-color: #ccc;
-	
+
 
 }
 
-.sec2 .pic img{
+.sec2 .pic img {
 	width: 100%;
 	height: 100%;
 	/*display: none;*/
-	
+
 	bottom: 0;
-	
-	
+
+
 }
-.black{
+
+.black {
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0,.7);
-	
+	background-color: rgba(0, 0, 0, .7);
+
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -287,11 +393,12 @@ table {
 
 	display: none;
 }
-.black .google{
+
+.black .google {
 	width: 90%;
 	height: 50%;
 	background-color: #fff;
-	border:4px solid #C8AB7E; 
+	border: 4px solid #C8AB7E;
 	margin: auto;
 	position: absolute;
 	top: 0;
@@ -320,25 +427,26 @@ table {
 
 
 
-footer{
+footer {
 	width: 100%;
 	/*margin-top:100px;*/
-	
-	background-image: url(footer-fade.png);
+
+	background-image: url(../images/footer-fade.png);
 	position: bottom center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	
+
 	font-weight: bold;
 	text-align: center;
 	line-height: 2em;
-	
+
 	position: relative;
-	
-	
-	
+
+
+
 }
-footer .copy p{
+
+footer .copy p {
 	font-size: 15px;
 	color: #555;
 }
@@ -352,11 +460,12 @@ footer .copy p{
 		font-family: 微軟正黑體;
 
 	}*/
-	footer ul{
-		font-size: 0px;
-		margin: auto;
-	}
-	/*
+footer ul {
+	font-size: 0px;
+	margin: auto;
+}
+
+/*
 	footer ul li{
 		display: inline-block;
 		position: relative;
@@ -373,43 +482,44 @@ footer .copy p{
 		right: 0;
 		top: 8px;
 	}*/
-	footer li:last-child{
-		border-right: none;
-	}
-	footer li a{
-		font-size: 16px;
-		vertical-align: bottom;
-		text-decoration: none;
-		color: #444;
-	}
-	.social-icon{
-		
-		/*box-sizing: border-box;*/
-		/*z-index: 2;*/
-		/*background-image: url(bb.jpg);*/
-		/*position: relative;*/
-		/*position: absolute;*/
+footer li:last-child {
+	border-right: none;
+}
+
+footer li a {
+	font-size: 16px;
+	vertical-align: bottom;
+	text-decoration: none;
+	color: #444;
+}
+
+.social-icon {
+
+	/*box-sizing: border-box;*/
+	/*z-index: 2;*/
+	/*background-image: url(bb.jpg);*/
+	/*position: relative;*/
+	/*position: absolute;*/
 	/*	overflow: hidden;*/
-		
-		font-size: 0;
-		/*padding: 10px 1% 0 0;*/
-		position: absolute;
-		
-		/*bottom: 0;*/
-		
-		font-size: 0;
-		
-		
-	}
-	.social-icon  img{
-	
-		vertical-align: bottom;	
-		/*height: 25px;*/
-		transition: .4s	
-		
-	}
-	.social-icon  img:hover{
-		transform: translateY(-4px);
-	}
+
+	font-size: 0;
+	/*padding: 10px 1% 0 0;*/
+	position: absolute;
+
+	/*bottom: 0;*/
+
+	font-size: 0;
 
 
+}
+
+.social-icon img {
+
+	vertical-align: bottom;
+	/*height: 25px;*/
+	transition: .4s
+}
+
+.social-icon img:hover {
+	transform: translateY(-4px);
+}

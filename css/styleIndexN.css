@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,420 +91,487 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-*{outline: 1px solid red;
-	margin:0;
+
+* {
+	outline: 1px solid red;
+	margin: 0;
 	padding: 0;
-	}
-	body{
-		background-image: url(bb.jpg);
+}
 
-	}
+body {
+	background-image: ../images/bb.jpg);
 
-	.content{
-		width: 960px;
-		margin: auto;
-		background-color: rgba(255,253,202,1);
-		
+}
 
-		
-		
-	}
-	nav{
-		text-align: right;
-		font-size: 0;
-		width: 100%;
-		z-index: 1;
-		margin-bottom: 0px;
-		/*background-color:rgba(255,253,202,1);*/
-		background-image: url(bb.jpg);
-		
-		
-	}
-	nav .icon{
-		float: left;
-		margin: 10px 10px 0 0;
-		font-size: 0;
-	}
-	nav .icon img{
-		width: 25px;
-		height: 25px;	
-		margin: 0 2px;
-	}
-	nav:after{
-		content:'';
-		display: block;
-		height: 5px;
-		background-color: #C8AB7E;
-	}
-	nav .mainMenu li {
+.content {
+	width: 960px;
+	margin: auto;
+	background-color: rgba(255, 253, 202, 1);
+
+
+
+
+}
+
+nav {
+	text-align: right;
+	font-size: 0;
+	width: 100%;
+	z-index: 1;
+	margin-bottom: 0px;
+	/*background-color:rgba(255,253,202,1);*/
+	background-image: url(../images/bb.jpg);
+
+
+}
+
+nav .icon {
+	float: left;
+	margin: 10px 10px 0 0;
+	font-size: 0;
+}
+
+nav .icon img {
+	width: 25px;
+	height: 25px;
+	margin: 0 2px;
+}
+
+nav:after {
+	content: '';
+	display: block;
+	height: 5px;
+	background-color: #C8AB7E;
+}
+
+nav .mainMenu li {
 	display: inline-block;
-		/*padding: 10px 10px;*/
-		font-size: 0px;
-		position: relative;
-		
-	}
-	nav .mainMenu > li > a{
-		display:inline-block;
-		position: relative;
-		padding: 10px;
-		z-index: 1	
-	}
-		
-		
-	nav .mainMenu li a .red{
-		position: absolute;
-		right: 0;
-		opacity: 0;
-		transition: .3s;
-	}
-	nav .mainMenu li a:hover .red{
-		opacity: 1;
-		z-index: -1;
-	}
-	.sub a{
-		display: block;
-		font-size: 16px;
-		padding: 30px; 
+	/*padding: 10px 10px;*/
+	font-size: 0px;
+	position: relative;
 
-	}
-	.no2 a,
-	.no3 a
-	{
-		padding: 30px 10px;
-		
-	}
-	nav  .mainMenu ul {
-		display: none;	
-		position: absolute;
-		/*top:-1000px;*/
-		transition: .5s ;
-		opacity: 0;
-		z-index: 1;
-		/*z-index: -1;*/
-	}
-	/*.fly{
+}
+
+nav .mainMenu>li>a {
+	display: inline-block;
+	position: relative;
+	padding: 10px;
+	z-index: 1
+}
+
+
+nav .mainMenu li a .red {
+	position: absolute;
+	right: 0;
+	opacity: 0;
+	transition: .3s;
+}
+
+nav .mainMenu li a:hover .red {
+	opacity: 1;
+	z-index: -1;
+}
+
+.sub a {
+	display: block;
+	font-size: 16px;
+	padding: 30px;
+
+}
+
+.no2 a,
+.no3 a {
+	padding: 30px 10px;
+
+}
+
+nav .mainMenu ul {
+	display: none;
+	position: absolute;
+	/*top:-1000px;*/
+	transition: .5s;
+	opacity: 0;
+	z-index: 1;
+	/*z-index: -1;*/
+}
+
+/*.fly{
 		position: absolute;
 		width: 100px;
 		height: 300px;
 		overflow: hidden;
 		top: 40px;
 		z-index: 1;*/
-		/*top:-500px;*/
-		/*transition: .5s;
+/*top:-500px;*/
+/*transition: .5s;
 
 	}*/
-	.mainMenu li:hover ul{
-		opacity: 1;
-		display: block;
-		/*top:30px;*/
-	}
-	.mainMenu .sub li a:hover{
-		background-color: rgba(255,255,255,1);
-	}
-	
-	.mainMenu ul li,
-	.mainMenu ul li a{
-		display: block;
-		font-family: 微軟正黑體;
-		font-weight: bold;
-		color: #86300e;
-		border-radius: 20px;
-		text-decoration: none;
-		background-color: rgba(239,216,183,.8);
-		transition: .3s	
-	}
-	.no2,.no3{
-		width: 90%
-	}
-	.no3{
-		left: 90%;
-		/*width: 100%;
+.mainMenu li:hover ul {
+	opacity: 1;
+	display: block;
+	/*top:30px;*/
+}
+
+.mainMenu .sub li a:hover {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.mainMenu ul li,
+.mainMenu ul li a {
+	display: block;
+	font-family: 微軟正黑體;
+	font-weight: bold;
+	color: #86300e;
+	border-radius: 20px;
+	text-decoration: none;
+	background-color: rgba(239, 216, 183, .8);
+	transition: .3s
+}
+
+.no2,
+.no3 {
+	width: 90%
+}
+
+.no3 {
+	left: 90%;
+	/*width: 100%;
 		*/
-	}
-	
-	
+}
 
 
 
 
 
-	nav .red{
-		position: absolute;
-		/*top:-10000px;*/
-		/*display:none;*/
-	}
-	nav .spot:hover .red{
-		/*top: 0px;*/
-		display:block;
-	}
-	.mainPic{
-		margin: 20px 0;
-		position: relative;
-		overflow: hidden;
-		
-		
-		
-		
-	}
-	.mainPic .main{
-		width: 960px;
-		height: 618px;
-		vertical-align: top;
-		
-		transition: 3s
-
-	}
-	.mainPic .cover{
-		width: 100%;
-		height: 100%;
-		background-color: #fff;
-		position: absolute;
-		top: 0;
-		opacity: 0;
-		transition: 2s;
-	}
-	.mainPic:hover .cover{
-		opacity: .3;
-	}
-	.mainPic:hover .main{
-		transform: scale(1.1);
-		
-	}
-	/*/////////////////////關於辣福///////////*/
-	.mainPic .tag{
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-
-	.aboutLove{
-		width: 940px;
-		
-		margin-left: 20px;
-		margin-top:60px; 
-		position: relative;
-		font-size: 0px;
-	}
-	.title{
-		margin:55px 0;
-
-	}
-	.title:after{
-		content: '';
-		display: inline-block;
-		height: 2px;
-		width: 780px;
-		background-color: #A97F43;
-		margin: 10px 0;
-		opacity: .7
-	
-
-	}
-	.brown{
-		width: 330px;		
-		background-color: #844808;
-		padding-left: 90px;
-		padding-right: 320px;
-		padding-top: 35px;
-		padding-bottom: 10px;
-		opacity: .7;
-		font-size: 16px;
-		color: white;
-		font-family: 標楷體;
-		line-height: 1.5em;
-	}
-	.booking{
-		text-align: right;
-		padding-top:20px;
-		position: relative;
-		font-size: 0;
-	}
-	.booking .hand{
-		position: absolute;
-		width: 30px;	
-		height: 30px;
-		bottom:0px;	
-		right: 1px;
-	}
-	.picList{
-		position: absolute;
-		top: 40px;
-		right: 40px;
-		font-size: 0px;
-
-	}
-	.picList2{
-		position: absolute;
-		right: 5px;
-		bottom: 0px;
-	}
-	.picList2 img{
-		margin: 5px;	
-	}
-	.picList2 div{
-		text-align: center;
-	}
-	.picList2 div a{
-		font-size: 0;
-	}
 
 
-	/*///買辣回家////*/
+nav .red {
+	position: absolute;
+	/*top:-10000px;*/
+	/*display:none;*/
+}
 
-	.buyLove{
-		padding: 20px;
-		font-size: 0px;
+nav .spot:hover .red {
+	/*top: 0px;*/
+	display: block;
+}
 
-	}
-	.buyLoveArticle{
-		overflow: hidden;
-		margin: auto;
-		font-size: 0px;
-		padding-left: 70px; 
-		
+.mainPic {
+	margin: 20px 0;
+	position: relative;
+	overflow: hidden;
 
-	}
-	.buyLove :nth-child(2n+1){
-		clear: left;
-	}
-	.buyLove .titleR{
-		font-size: 0px;
-		text-align: right;
-		margin: 20px 0;
-		display: line;
-	}
-	.buyLove .titleR:before{
-		content: '';
-		display: inline-block;
-		height: 2px;
-		width: 739px;
-		background-color: #A97F43;
-		margin: 10px 0;
-		opacity: .7
-	
-	}
-	.buyLove .pic{
-		float: left;
-	}
-	.buyLove .text{
-		width: 320px;
-		font-size: 16px;
-		line-height: 1.5em;
-		float: left;
-		background-color: #A97F43;
-		padding: 30px 75px;
-		font-family: 微軟正黑體;
-		margin-top:20px;
-	}
-	.buyLove .text h6{
-		font-family: 標楷體;
-		font-size: 20px;
-		font-weight: bold;
-	}
-	.buyLove .text a{
-		text-decoration: none;
-		color: #000;
-		font-weight: bold;
 
-	}
-	/*--------------辣福新訓*/
-	.loveNews{
-		font-size: 0px;
-		margin: 20px 0;
-		
-	}
-	.loveNews .news {
-		position: relative;
-		text-align: right;
-		text-decoration: none;
-	}
-	.loveNews .news a{
 
-		font-size: 16px;
-		color: #000;
-		line-height: 1.5em;
-		text-decoration: none;
-		font-family: 微軟正黑體; 
-	}
 
-	.loveNews .news a:hover{
-		border-bottom: 1px solid #000;
-	}
+}
 
-	.loveNews .news .left img{
-		position: absolute;
-		top: 44px;
-		left: 2px;
-		filter:drop-shadow(10px 10px 7px rgba(0, 0, 0, 1));
+.mainPic .main {
+	width: 960px;
+	height: 618px;
+	vertical-align: top;
 
-	}
-	.loveNews .news .right img{
-		position: absolute;
-		top: 44px;
-		right: 0;
-		filter:drop-shadow(-10px 10px 7px rgba(0, 0, 0, 1));
+	transition: 3s
+}
 
-	}
-	.footer{
-		width: 100%;
-		background-image:url(footer-fade.png ); 
-		background-repeat: no-repeat;
-		padding: 100px 0 10px 0  ;
-		clear: both;
-		margin-top: 10px;
-		
-	}
-	.foot{
-		margin: auto;
-		width: 400px;
-		line-height: 1.5em;
-		font-weight: bold;
-		font-family: 微軟正黑體;
+.mainPic .cover {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	transition: 2s;
+}
 
-	}
-	.foot ul{
-		font-size: 0px;
-	}
-	
-	.foot ul li{
-		display: inline-block;
-		padding-right: 5px;
-		margin-right: 5px;
-		border-right: 1px solid #000; 
-		
-	}
-	.foot li:last-child{
-		border-right: none;
-	}
-	.foot li a{
-		font-size: 16px;
-		vertical-align: bottom;
-		text-decoration: none;
-		color: #000;
-	}
+.mainPic:hover .cover {
+	opacity: .3;
+}
+
+.mainPic:hover .main {
+	transform: scale(1.1);
+
+}
+
+/*/////////////////////關於辣福///////////*/
+.mainPic .tag {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.aboutLove {
+	width: 940px;
+
+	margin-left: 20px;
+	margin-top: 60px;
+	position: relative;
+	font-size: 0px;
+}
+
+.title {
+	margin: 55px 0;
+
+}
+
+.title:after {
+	content: '';
+	display: inline-block;
+	height: 2px;
+	width: 780px;
+	background-color: #A97F43;
+	margin: 10px 0;
+	opacity: .7
+}
+
+.brown {
+	width: 330px;
+	background-color: #844808;
+	padding-left: 90px;
+	padding-right: 320px;
+	padding-top: 35px;
+	padding-bottom: 10px;
+	opacity: .7;
+	font-size: 16px;
+	color: white;
+	font-family: 標楷體;
+	line-height: 1.5em;
+}
+
+.booking {
+	text-align: right;
+	padding-top: 20px;
+	position: relative;
+	font-size: 0;
+}
+
+.booking .hand {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	bottom: 0px;
+	right: 1px;
+}
+
+.picList {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	font-size: 0px;
+
+}
+
+.picList2 {
+	position: absolute;
+	right: 5px;
+	bottom: 0px;
+}
+
+.picList2 img {
+	margin: 5px;
+}
+
+.picList2 div {
+	text-align: center;
+}
+
+.picList2 div a {
+	font-size: 0;
+}
+
+
+/*///買辣回家////*/
+
+.buyLove {
+	padding: 20px;
+	font-size: 0px;
+
+}
+
+.buyLoveArticle {
+	overflow: hidden;
+	margin: auto;
+	font-size: 0px;
+	padding-left: 70px;
+
+
+}
+
+.buyLove :nth-child(2n+1) {
+	clear: left;
+}
+
+.buyLove .titleR {
+	font-size: 0px;
+	text-align: right;
+	margin: 20px 0;
+	display: line;
+}
+
+.buyLove .titleR:before {
+	content: '';
+	display: inline-block;
+	height: 2px;
+	width: 739px;
+	background-color: #A97F43;
+	margin: 10px 0;
+	opacity: .7
+}
+
+.buyLove .pic {
+	float: left;
+}
+
+.buyLove .text {
+	width: 320px;
+	font-size: 16px;
+	line-height: 1.5em;
+	float: left;
+	background-color: #A97F43;
+	padding: 30px 75px;
+	font-family: 微軟正黑體;
+	margin-top: 20px;
+}
+
+.buyLove .text h6 {
+	font-family: 標楷體;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.buyLove .text a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+
+}
+
+/*--------------辣福新訓*/
+.loveNews {
+	font-size: 0px;
+	margin: 20px 0;
+
+}
+
+.loveNews .news {
+	position: relative;
+	text-align: right;
+	text-decoration: none;
+}
+
+.loveNews .news a {
+
+	font-size: 16px;
+	color: #000;
+	line-height: 1.5em;
+	text-decoration: none;
+	font-family: 微軟正黑體;
+}
+
+.loveNews .news a:hover {
+	border-bottom: 1px solid #000;
+}
+
+.loveNews .news .left img {
+	position: absolute;
+	top: 44px;
+	left: 2px;
+	filter: drop-shadow(10px 10px 7px rgba(0, 0, 0, 1));
+
+}
+
+.loveNews .news .right img {
+	position: absolute;
+	top: 44px;
+	right: 0;
+	filter: drop-shadow(-10px 10px 7px rgba(0, 0, 0, 1));
+
+}
+
+.footer {
+	width: 100%;
+	background-image: url(../images/footer-fade.png );
+	background-repeat: no-repeat;
+	padding: 100px 0 10px 0;
+	clear: both;
+	margin-top: 10px;
+
+}
+
+.foot {
+	margin: auto;
+	width: 400px;
+	line-height: 1.5em;
+	font-weight: bold;
+	font-family: 微軟正黑體;
+
+}
+
+.foot ul {
+	font-size: 0px;
+}
+
+.foot ul li {
+	display: inline-block;
+	padding-right: 5px;
+	margin-right: 5px;
+	border-right: 1px solid #000;
+
+}
+
+.foot li:last-child {
+	border-right: none;
+}
+
+.foot li a {
+	font-size: 16px;
+	vertical-align: bottom;
+	text-decoration: none;
+	color: #000;
+}
+
 /*	.social{
 		text-align: right;
 		padding:0 5px;
